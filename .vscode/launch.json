@@ -23,7 +23,7 @@
             "module": "celery",
             "args": [
                 "-A",
-                "dj_backend_server",
+                "core",
                 "worker",
                 "-l",
                 "debug"
