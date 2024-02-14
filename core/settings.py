@@ -90,10 +90,10 @@ WSGI_APPLICATION = 'core.wsgi.application'
 DATABASES = {
    'default': {
        'ENGINE': 'django.db.backends.postgresql',
-       'NAME': '',
-       'USER': '',
-       'PASSWORD': '',
-       'HOST': '',
+       'NAME': 'postgres',
+       'USER': 'postgres.jdffrqoludeprmyyavwe',
+       'PASSWORD': 'QWE@#$asd234',
+       'HOST': 'aws-0-us-east-1.pooler.supabase.com',
        'PORT': 5432,
    }
  }
@@ -162,15 +162,5 @@ LOCALE_PATHS = [
 
 CELERY_BROKER_URL = os.environ.get('CELERY_BROKER_URL', 'redis://localhost:6379/0')
 CELERY_RESULT_BACKEND = os.environ.get('CELERY_RESULT_BACKEND', 'redis://localhost:6379/0')
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.postgresql',
-       'NAME': 'postgres',
-       'USER': 'postgres',
-       'PASSWORD': 'QWE@#$asd234',
-       'HOST': 'db.jdffrqoludeprmyyavwe.supabase.co',
-       'PORT': 5432,
-   }
- }
 
 SESSION_ENGINE = 'django.contrib.sessions.backends.db'  # You can choose other engines as well
